@@ -1,15 +1,22 @@
-<div class="ml-3">
+<div class="ml-3" >
   <div class="contiene">
     <figure>
       <img src="{{ profile._links.avatar.href }}" alt="avatar" class="avatar" />
     </figure>
   </div>
-  <div class="lado ml-2">
+  <div class="lado ml-2" >
     <h5>{{ profile.first_name }} {{ profile.last_name }}</h5>
     <!--   <h4><i class="fab fa-angular"></i>{{ profile.email }}</h4> -->
   </div>
+  <div class="lado ml-2">
+    <small style="background-color: #25C292; color: #FFEEEE; border-radius: 3px;"><b>Cuenta</b></small>
+  </div>
+  <div class="lado" style="width: 12%; float: right;">
+    
+    <button class="mr-3 btn btn-info"><fa-icon [icon]="faPen" class="mr-1"></fa-icon>Editar {{profile.first_name}}</button>
+  </div>
 </div>
-<div class="ml-3">
+<div class="ml-3 bigDiv mr-3">
   <div class="uno">
     <div style="width: auto;  display: inline-block;">
       <h6>{{ profile.first_name }} {{ profile.last_name }}</h6>
@@ -23,15 +30,17 @@
     <div class="alturaDiv" style="background-color: #FFEEEE;">
       <p class="parrafo">No private Notes</p>
     </div>
-    <div>
+    <div >
       <h4>Permisos:</h4>
+      <h6>Administrador</h6>
+      <p>Es usted un usuario administrador?</p>
     </div>
   </div>
-  <div class="tres">
+  <div class="tres bigDiv">
     <div style="display: inline-block; text-align: center;">
       <div><h6><b>Proyectos</b></h6></div>
       <div
-        style="border-style: groove; display: inline-block; margin: auto; text-align: center; "
+        style=" display: inline-block; margin: auto; text-align: center; "
         class="porcentaje">
         <h6 style="text-align: center;" class="mt-2">10</h6>
       </div>
@@ -40,7 +49,7 @@
     <div style="display: inline-block; text-align: center;" class="ml-2">
       <div><h6><b>Tareas</b></h6></div>
       <div
-        style="border-style: groove;  display: inline-block; text-align: center;"
+        style="display: inline-block; text-align: center;"
         class="porcentaje"
       >
         <h6 style="text-align: center;" class="mt-2">10</h6>
@@ -50,7 +59,7 @@
     <div style="display: inline-block;" class="ml-3">
       <div style="text-align: center;"><h6><b>Hitos</b></h6></div>
       <div
-        style="border-style: groove; display: inline-block; "
+        style=" display: inline-block; "
         class="porcentaje"
       >
         <h6 style="text-align: center;" class="mt-2">10</h6>
