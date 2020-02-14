@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { PerfilService } from "src/app/services/perfil.service";
 import { MatTableDataSource } from "@angular/material";
+import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons"  
 
 @Component({
   selector: "app-lista",
@@ -11,6 +12,8 @@ export class ListaComponent implements OnInit {
   profiles;
   headers = {};
   header = {};
+  faEnvelope = faEnvelope;
+  faPhoneAlt = faPhoneAlt;
   constructor(private api: PerfilService) {
     this.getAllData();
     

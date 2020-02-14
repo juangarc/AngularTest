@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { PerfilService } from "src/app/services/perfil.service";
 import { ActivatedRoute } from "@angular/router";
+import { faPen } from "@fortawesome/free-solid-svg-icons"  
+
 
 @Component({
   selector: "app-perfil",
@@ -10,6 +12,7 @@ import { ActivatedRoute } from "@angular/router";
 export class PerfilComponent implements OnInit {
   id: number = null;
   profile;
+  faPen = faPen;
   constructor(private api: PerfilService, private route: ActivatedRoute) {
     this.id = this.route.snapshot.params["id"];
     console.log(this.id);

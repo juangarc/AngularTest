@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from "./material.module";
 
 //External
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AngularFontAwesomeModule,
+    FontAwesomeModule,
     MaterialModule
   ],
   providers: [],
